@@ -1,7 +1,9 @@
 human = nil
 
-human = false
+human = true
 
-if human == true
+if human != true
     puts "yes"
+else
+    puts "no"
 end
