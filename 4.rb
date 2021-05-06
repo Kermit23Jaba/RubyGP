@@ -3,7 +3,7 @@ human = nil
 human = true
 
 if human != true
-    puts "yes"
+  puts "yes"
 else
-    puts "no"
+  puts "no"
 end
