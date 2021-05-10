@@ -40,12 +40,26 @@
 
 
 
-"hello".each_char {|c| print c, if c == "e"; с = "J"; b +=c}
-puts b
+# "hello".each_char {|c| print c, if c == "e"; с = "J"; b +=c}
+# puts b
 
-# a = 'abcd'.split(//).map { |ch| ch == 'a' ? 'n' : ch }.join
+# a = 'abcd'.split(//).map { |i| i == 'a' ? 'n' : i }.join
 # puts a
 
-result = ''
-"hello".each_char { |c| c == 'e' ? result += 'n' : result += c }
-print result
+# result = ''
+# "hello".each_char { |i| i == 'e' ? result += 'n' : result += i }
+# print result
+
+# a = [1, 1, 2, 3, 4 -51, 12, 12, 12, -51]
+# b = []
+
+# a.each do |i|
+#   if i == i
+#     b << i
+#   else
+#     i != i
+#   end
+# end
+# print b
+
+puts "Ho! " * 3
