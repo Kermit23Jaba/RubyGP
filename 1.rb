@@ -49,17 +49,3 @@
 # result = ''
 # "hello".each_char { |i| i == 'e' ? result += 'n' : result += i }
 # print result
-
-# a = [1, 1, 2, 3, 4 -51, 12, 12, 12, -51]
-# b = []
-
-# a.each do |i|
-#   if i == i
-#     b << i
-#   else
-#     i != i
-#   end
-# end
-# print b
-
-puts "Ho! " * 3
