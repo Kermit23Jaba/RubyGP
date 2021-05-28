@@ -2,7 +2,7 @@
 #   loop = string.size
 #   word = ''
 #   while loop > 0
-#     loop -= 1                  
+#     loop -= 1
 #     word += string[loop]
 #   end
 
@@ -17,18 +17,17 @@
 #   if i == "a"
 #     i = "N"
 #     b << i
-#   elsif 
+#   elsif
 #     b << i
 #   end
 # end
 
 # puts b.join
-    
 
 # a = 'absc'
 # b = []
 # for i in a.split(//) do
-#   if i == "a" 
+#   if i == "a"
 #     i = "A"
 #     b << i
 #   elsif

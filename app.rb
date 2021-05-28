@@ -107,11 +107,139 @@
 
 # password(words)
 
-humans = 10_000
-machines = 10_000
+# @humans = 10
+# @machines = 1
 
-loop do
-  if check_victory?
-    exit
-  end
+
+
+# def luck?
+#   rand(0..1) == 1
+# end
+
+# def boom
+#   diff = rand(1..3)
+#   if luck?
+#     @machines -= diff
+#     puts "#{diff} машин уничтожено"
+#   else
+#     @humans -= diff
+#     puts "#{diff} людей погибло"
+#   end
+# end
+
+# def random_city
+#   case dice = rand(1..5)
+#     when dice == 1
+#       "Moscow"
+#     when dice == 2
+#       "Los-Angeles"
+#     when dice == 3
+#       "Pecin"
+#     when dice == 4
+#       "London"
+#     else
+#       "Seyl"
+#   end
+# end
+
+# def random_sleep
+#   sleep rand(0.3..1.5)
+# end
+
+# def stats
+#   puts "осталось #{@humans} людей и #{@machines} машин"
+# end
+
+
+
+# def event1
+#   puts "Запущена ракета по городу #{random_city}"
+#   random_sleep
+#   boom
+# end
+
+# def event2
+#   puts "Применено радоактивное оружие в городе #{random_city}"
+#   random_sleep
+#   boom
+# end
+
+# def event3
+#   puts "Группа солдат прорыбвает оборону противника в городе #{random_city}"
+#   random_sleep
+#   boom
+# end
+
+# def check_victory?
+#   false
+# end
+
+# loop do
+#   if check_victory?
+#     exit
+#   end
+
+#   dice = rand(1..3)
+
+#   if dice == 1
+#     event1
+#   elsif dice == 2
+#     event2
+#   elsif dice == 3
+#     event3
+#   end
+
+#   stats    
+#   random_sleep
+# end
+
+# puts "Ваш возраст?"
+# age = gets.to_i
+# if age <= 18
+#   puts "Вам нет 18"
+#   exit
+# end
+
+# balance = 20
+# loop do
+#   puts "нажнми Enter чтобы дернуть рычаг"
+#   gets
+
+#   x = rand(0..5)
+#   y = rand(1..5)
+#   z = rand(1..5)
+
+#   puts "Результат #{x}, #{y}, #{z}"
+
+#   if x == 0 && y == 0 && z == 0
+#     balance = 0
+#     puts "Ваш баланс обнулен"
+#   elsif x == 1 && y == 1 && z == 1
+#     balance += 10
+#     puts "Баланс пополнен на 10 доллоров"
+#   elsif x == 2 && y == 2 && z == 2
+#     puts balance += 20
+#     puts "Баланс пополнен на 20 доллоров"
+#     elsif x == 7 && y == 7 && z == 7
+#       puts balance += 100
+#       puts "Баланс пополненен на 100 доллоров"
+#     else
+#     balance -= 0.5
+#     puts "Баланс уменшился на 50 центов"
+#   end
+
+#   puts "Ваш баланс #{balance}"
+# end
+
+arr1 = Array.new(10, 1)
+arr2 = Array.new(10, 1)
+
+i = rand(0..9)
+
+if arr[i] == 1
+  arr[i] = 0
+  puts "Робот по идексу #{i} убит"
+else
+  puts "Промазали"
 end
+
