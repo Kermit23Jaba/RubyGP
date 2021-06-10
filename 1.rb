@@ -37,14 +37,13 @@
 
 # puts b.join
 
-
-
-# "hello".each_char {|c| print c, if c == "e"; с = "J"; b +=c}
-# puts b
-
 # a = 'abcd'.split(//).map { |i| i == 'a' ? 'n' : i }.join
 # puts a
 
 # result = ''
 # "hello".each_char { |i| i == 'e' ? result += 'n' : result += i }
 # print result
+
+# a = [1, 2, 3]
+# a.each { |i| i == 2 ? i * 2 : i; b += i }
+# p b

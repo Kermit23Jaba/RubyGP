@@ -205,7 +205,7 @@
 #   puts "нажнми Enter чтобы дернуть рычаг"
 #   gets
 
-#   x = rand(0..5)
+#   x = rand(1..5)
 #   y = rand(1..5)
 #   z = rand(1..5)
 
@@ -230,16 +230,4 @@
 
 #   puts "Ваш баланс #{balance}"
 # end
-
-arr1 = Array.new(10, 1)
-arr2 = Array.new(10, 1)
-
-i = rand(0..9)
-
-if arr[i] == 1
-  arr[i] = 0
-  puts "Робот по идексу #{i} убит"
-else
-  puts "Промазали"
-end
-
+ 
