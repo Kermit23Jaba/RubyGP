@@ -28,10 +28,9 @@
 
 # p arr
 
-a = 'H'
-b = a.downcase!
-a = 'xxx'
-c = b
-p b
-p a
-p c
+s = rand(1..5)
+arr = Array.new(2) { s } #[4, 4]
+p arr
+
+arr = Array.new(2) { rand(1..5) } #[3, 4]
+p arr
