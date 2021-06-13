@@ -44,7 +44,7 @@
 # "hello".each_char { |i| i == 'e' ? result += 'n' : result += i }
 # print result
 
-a = [1, 2, 3]
-b = 0
-a.each { |i| i == 2 ? i * 2 : i; b += i }
-p b
+# a = [1, 2, 3]
+# b = 0
+# a.each { |i| i == 2 ? i * 2 : i; b += i }
+# p b

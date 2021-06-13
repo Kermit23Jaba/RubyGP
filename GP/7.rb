@@ -1,3 +1,12 @@
+#Код для решения проблемы с кирилицей в консоле
+if (Gem.win_platform?)
+  Encoding.default_external = Encoding.find(Encoding.locale_charmap)
+  Encoding.default_internal = __ENCODING__
+  [STDIN, STDOUT].each do |io|
+    io.set_encoding(Encoding.default_external, Encoding.default_internal)
+  end
+end
+
 # quest 7.1
 
 # number = gets.to_i
@@ -32,8 +41,8 @@
 
 # arr.each do |n|
 #   if n > maximum
-#     maximum = n
-#   end
+#   maximum = n
+#  end
 # end
 # max = 0
 # arr.each { |i| max = i if i > max }
@@ -46,18 +55,44 @@
 # p arr
 
 
-arr = [1, 2, 3, 4, 5, "E", 7]
-arr2 = []
-loop = arr.size
-while loop > 0 do
-   loop -= 1
-   arr2 << arr[loop]
-end
-p arr2
+# arr = [1, 2, 3, 4, 5, "E", 7]
+# arr2 = []
+# loop = arr.size
+# while loop > 0 do
+#   loop -= 1
+#   arr2 << arr[loop]
+# end
+# p arr2
 
 # for i in arr
 #   arr2.unshift(i)
 # end
 
 # p arr2
+
+# quest 7.4
+
+# arr = ["масло", "молоко"]
+
+# basket = []
+
+# while arr.any? do
+#   puts "Need to buy: #{arr}"
+#   choice = gets.downcase.chomp
+#   arr.delete(choice)
+# end
+
+# puts "You bought everything"
+
+# until arr.empty?
+#   puts "Need to buy: #{arr}"
+#   puts "What did you buy?"
+#   choice = gets.downcase.chomp
+#   arr.delete(choice)
+# end
+
+# puts "You bought everything"
+
+# quest 7.6
+
 
