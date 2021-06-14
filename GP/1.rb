@@ -48,3 +48,14 @@
 # b = 0
 # a.each { |i| i == 2 ? i * 2 : i; b += i }
 # p b
+
+word = "kent"
+bin = word.size
+w = ''
+
+while bin > 0
+  bin -= 1
+  w += word[bin]
+end
+
+p w

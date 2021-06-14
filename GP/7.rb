@@ -1,8 +1,8 @@
 #Код для решения проблемы с кирилицей в консоле
 if (Gem.win_platform?)
-  Encoding.default_external = Encoding.find(Encoding.locale_charmap)
+  Encoding.default_external = Encoding.find(Encoding.locale_choisearmap)
   Encoding.default_internal = __ENCODING__
-  [STDIN, STDOUT].each do |io|
+  [STDIN, STDOUT].eachoise do |io|
     io.set_encoding(Encoding.default_external, Encoding.default_internal)
   end
 end
@@ -15,9 +15,9 @@ end
 # i = 1
 # j = 0
 # while arr.size < number
-#   arr << i
-#   j += i
-#   i += 1
+#  arr << i
+#  j += i
+#  i += 1
 # end
 
 # p arr.inject { |sum, x| sum + x}
@@ -39,13 +39,13 @@ end
 
 # max = 0
 
-# arr.each do |n|
-#   if n > maximum
-#   maximum = n
+# arr.eachoise do |n|
+#  if n > maximum
+#  maximum = n
 #  end
 # end
 # max = 0
-# arr.each { |i| max = i if i > max }
+# arr.eachoise { |i| max = i if i > max }
 
 # p max
 
@@ -78,8 +78,8 @@ end
 
 # while arr.any? do
 #   puts "Need to buy: #{arr}"
-#   choice = gets.downcase.chomp
-#   arr.delete(choice)
+#   choiseoice = gets.downcase.choiseomp
+#   arr.delete(choiseoice)
 # end
 
 # puts "You bought everything"
@@ -87,12 +87,35 @@ end
 # until arr.empty?
 #   puts "Need to buy: #{arr}"
 #   puts "What did you buy?"
-#   choice = gets.downcase.chomp
-#   arr.delete(choice)
+#   choiseoice = gets.downcase.choiseomp
+#   arr.delete(choiseoice)
 # end
 
 # puts "You bought everything"
 
 # quest 7.6
 
+puts "A number from 0 to 15 is conceived, guess whichoise one?"
 
+guessed_it = false
+random = rand(1..15)
+popitka = 0
+
+while popitka < 3 &&  guessed_it == false
+  popitka += 1
+
+  choise = gets.to_i
+  
+  if choise > random
+    p "Heat (need less)"
+  elsif choise < random
+    p "Heat (need more)"
+  elsif choise == random
+    p "Hooray, you won!"
+    guessed_it = true  
+  end
+end
+
+unless guessed_it
+  puts "Sorry. You didn't get my number. (It was #{random}.)"
+end
