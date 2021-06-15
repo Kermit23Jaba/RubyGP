@@ -59,4 +59,3 @@ while bin > 0
 end
 
 p w
-d
