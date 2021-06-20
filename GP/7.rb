@@ -1,11 +1,11 @@
 #Код для решения проблемы с кирилицей в консоле
-if (Gem.win_platform?)
-  Encoding.default_external = Encoding.find(Encoding.locale_choisearmap)
-  Encoding.default_internal = __ENCODING__
-  [STDIN, STDOUT].eachoise do |io|
-    io.set_encoding(Encoding.default_external, Encoding.default_internal)
-  end
-end
+# if (Gem.win_platform?)
+#   Encoding.default_external = Encoding.find(Encoding.locale_choisearmap)
+#   Encoding.default_internal = __ENCODING__
+#   [STDIN, STDOUT].eachoise do |io|
+#     io.set_encoding(Encoding.default_external, Encoding.default_internal)
+#   end
+# end
 
 # quest 7.1
 
@@ -95,27 +95,29 @@ end
 
 # quest 7.6
 
-puts "A number from 0 to 15 is conceived, guess whichoise one?"
+# puts "A number from 0 to 15 is conceived, guess whichoise one?"
 
-guessed_it = false
-random = rand(1..15)
-popitka = 0
+# guessed_it = false
+# random = rand(1..15)
+# popitka = 0
 
-while popitka < 3 &&  guessed_it == false
-  popitka += 1
+# while popitka < 3 &&  guessed_it == false
+#   popitka += 1
 
-  choise = gets.to_i
+#   choise = gets.to_i
   
-  if choise > random
-    p "Heat (need less)"
-  elsif choise < random
-    p "Heat (need more)"
-  elsif choise == random
-    p "Hooray, you won!"
-    guessed_it = true  
-  end
-end
+#   if choise > random
+#     p "Heat (need less)"
+#   elsif choise < random
+#     p "Heat (need more)"
+#   elsif choise == random
+#     p "Hooray, you won!"
+#     guessed_it = true  
+#   end
+# end
 
-unless guessed_it
-  puts "Sorry. You didn't get my number. (It was #{random}.)"
-end
+# unless guessed_it
+#   puts "Sorry. You didn't get my number. (It was #{random}.)"
+# end
+
+

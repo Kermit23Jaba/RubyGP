@@ -53,7 +53,7 @@ word = "kent"
 bin = word.size
 w = ''
 
-while bin > 0
+while bin > 0  
   bin -= 1
   w += word[bin]
 end

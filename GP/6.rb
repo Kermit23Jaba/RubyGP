@@ -10,6 +10,6 @@ loop do
     puts "Sorry, we don't have a car with that number :("
   else
     puts "Congratulations, you have received: #{car[choice]}"
-    break
+  break
   end
 end
