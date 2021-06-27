@@ -49,13 +49,22 @@
 # a.each { |i| i == 2 ? i * 2 : i; b += i }
 # p b
 
-word = "kent"
-bin = word.size
-w = ''
+# word = "kent"
+# bin = word.size
+# w = ''
 
-while bin > 0  
-  bin -= 1
-  w += word[bin]
-end
+# while bin > 0  
+#   bin -= 1
+#   w += word[bin]
+# end
 
-p w
+# p w
+
+arr1 = [1, 2, 3]
+arr2 = [5, 6, 7]
+
+c = [arr1, arr2]
+
+c.flatten
+
+p c

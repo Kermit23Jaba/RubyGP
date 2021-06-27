@@ -1,12 +1,12 @@
-# для одного файла
-# current_path = File.dirname(__FILE__)
+для одного файла
+current_path = File.dirname(__FILE__)
 
-# file_path = current_path + "/data/text.txt"
+file_path = current_path + "/data/text.txt"
 
 # Собрать в массив файлы директории проще всего вот так:
 # file_path = Dir[__dir__ + "/data/*.txt"]
 
-
+# Собрать в массив файлы директории проще всего вот так:
 # all_files =  Dir["question/*"]
 
 # good_answer = 0
