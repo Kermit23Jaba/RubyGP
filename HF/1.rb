@@ -47,15 +47,36 @@
 # end
 
 
-# def sum(a, b)
-#   return a + b
-# end
+def sum(a, b)
+  return a + b
+end
 
-# as = sum(45, 46)
-# p as
+as = sum(45, 46)
+p as
 
-# sa = sum(6, 6)
-# p sa
+sa = sum(6, 6)
+p sa
+
+mum(6, 4)
+
+p mum
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # word = [0, nil]
@@ -63,8 +84,8 @@
 # arr2 = Array.new(3) {arr}
 # p arr2
 
-arr2 = [
-  [0, 0, nil],
-  [nil, 0, nil]
-  [0, 0, 0]
-]
+# arr2 = [
+#   [0, 0, nil],
+#   [nil, 0, nil]
+#   [0, 0, 0]
+# ]

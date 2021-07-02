@@ -1,5 +1,5 @@
-# all_f= Dir["data/*"]
-all_f = Dir[__dir__ + "/data/*.txt"]
+# all_f= Dir["data/*"] <= такой херни не выйдет см.вниз
+all_f = Dir[__dir__ + "/data/*.txt"] <= Можно запускать из любой директории
 
 fale = all_f.map { |f| File.readlines(f, chomp: true) }
 
