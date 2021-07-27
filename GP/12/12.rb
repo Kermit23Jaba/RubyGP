@@ -1,4 +1,20 @@
-var = %w[камень ножницы бумага огонь]
+def who_win(gamer, com, win_con)
+  if gamer == com
+    return 0
+  end
+
+  code = "#{gamer}#{com}"
+  winer = win_con.include?(code)
+
+  if winer
+    return 1
+  end
+  
+  return 2
+end
+
+var = %w[камень ножницы бумага]
+win_con = %w[01 12 20]
 
 p "Введите вариант:"
 
@@ -11,17 +27,10 @@ gamer = gets.to_i
 com = rand(var.size)
 
 p "Вы выбрали #{var[gamer]}"
-p "Компьютер выбрал #{com}"
+p "Компьютер выбрал #{var[com]}"
 
-if gamer == com
-  p "Ничья"
-elsif gamer == 0 && com == 1 || 
-  gamer == 1 && com == 2 || 
-  gamer == 2 && com == 0 ||
-  gamer == 3 && com == 1 ||
-  gamer == 3 && com == 2 ||
-  gamer == 0 && com == 3
-  p "Вы победили"
-else
-  p "Компьютер победил"
+case who_win(gamer, com, win_con)
+when 0 then p "ничья"
+when 1 then p "Вы победили"
+when 2 then p "Победил компьютер"
 end
