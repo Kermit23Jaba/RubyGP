@@ -14,7 +14,7 @@ post '/' do
     @title = "Thank you"
     @message = "Dear #{@user_name}, your phone #{@phone} at #{@data}"
 
-    f = File.open('users.txt', 'a')
+    f = File.open('./public/users.txt', 'a')
     f.write("#{@user_name} #{@phone} #{@data}\n")
     f.close
 
